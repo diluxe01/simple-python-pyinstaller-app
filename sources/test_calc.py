@@ -26,7 +26,7 @@ class TestCalc(unittest.TestCase):
         concatenated string
         """
         result = calc.add2('abc', 'def')
-        self.assertEqual(result, 'abcdef')
+        self.assertEqual(result, 'abcdefg')
 
     def test_add_string_and_integer(self):
         """

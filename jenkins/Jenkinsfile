@@ -8,6 +8,12 @@ pipeline {
                 bat "python -m py_compile sources/add2vals.py sources/calc.py"
             }
         }
+        stage('Test') {
 
+            
+            steps {
+                bat "python -m sources/test_calc.py"
+            }
+        }
     }
 }
